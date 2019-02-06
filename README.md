@@ -1,6 +1,5 @@
 # Propuesta de página web
   
-Este repo contiene el diseño HTML, CSS y JS para implementar una página para la universidad Iberoamericana.  
-El diseño original se encuentra en:  
+Este repo contiene el diseño HTML, CSS y JS para una página de préstamo de materiales para la universidad Iberoamericana.  
   
-  http://enlinea.uia.mx/reservaprestamoequipo/ingenierias/login.cfm
+El diseño original se encuentra [aqui](http://enlinea.uia.mx/reservaprestamoequipo/ingenierias/login.cfm).

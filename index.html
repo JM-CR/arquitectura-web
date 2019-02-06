@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+      Portal de acceso para prestamo de materiales.
+
+      @Author Josue Mosh
+      @Date 5/Feb/2019
+      @File index.html
+    -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="device=device-width ,initial-scale=1"/>
+    <meta name="keywords" content="ibero, login, materiales"/>
+    <title>Pr&eacute;stamo de material</title>
+</head>
+
+<body>
+    <h1>IBERO</h1>
+    <p>Ingresa a pr&eacute;stamo de material</p>
+
+    <form method="post" action="">
+        <label for="tipoUsuario">Tipo de usuario</label>
+        <select id="tipoUsuario" name="tipoUsuario">
+            <option>Seleccione una opción</option>
+            <option value="alum">Alumno</option>
+            <option value="alumInter">Alumno Intercambio</option>
+            <option value="prof">Profesor/Empleado</option>
+        </select>
+
+        <fieldset class="dato">
+            <legend>Cuenta</legend>
+            <input type="email" id="cuenta" name="cuenta" placeholder="000000-0" required/>
+        </fieldset>
+
+        <fieldset class="dato">
+            <legend>Contrase&ntilde;a</legend>
+            <input type="password" id="pass" name="pass" required/>
+            <img src="img/ojo-login.png" alt=""/>
+        </fieldset>
+
+        <input type="submit" value="Enviar"/>
+    </form>
+
+    <p>Utiliza la misma contrase&ntilde;a de servicios en l&iacute;nea</p>
+
+</body>
+</html>
