@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      Lista de materiales y pedidos.
+
+      @Author Josue Mosh
+      @Date 5/Feb/2019
+      @File pedir-material.html
+    -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="device=device-width ,initial-scale=1"/>
+    <title>Pr&eacute;stamo de material</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nuevo</h1>
+        <h2>Lista de material solicitado</h2>
+
+        <nav>
+            <ul>
+                <li><a href="#">Salir</a></li>
+                <li><a href="#">Volver</a></li>
+            </ul>
+        </nav>
+
+        <form method="post" action=".">
+            <label for="categoria">Categor&iacute;a</label>
+            <select id="categoria" name="categoria">
+                <option value="0" selected>Seleccione...</option>
+                <option value="1">AMPLIFICADORES OPERACIONALES</option>
+                <option value="2">ANALIZADORES</option>
+                <option value="3">BATERIAS Y PILAS</option>
+                <option value="4">BOBINAS</option>
+                <option value="5">CABLES Y HERRAMIENTAS</option>
+                <option value="6">CAPACITORES</option>
+                <option value="7">CARGADORES</option>
+                <option value="8">COMPUERTAS LÓGICAS</option>
+                <option value="9">COMPUTO</option>
+                <option value="10">DAQ</option>
+                <option value="11">DIODOS</option>
+                <option value="12">DRONES Y ACCESORIOS</option>
+                <option value="13">EQUIPOS DE COMUNICACION</option>
+                <option value="14">FIELD POINT Y ACCESORIOS</option>
+                <option value="15">FUENTES DE VOLTAJE</option>
+                <option value="16">GENERADORES DE FUNCIONES</option>
+                <option value="17">HERRAMENTAL</option>
+                <option value="18">KITS DIDACTICOS</option>
+                <option value="19">LOGIC LEVEL CONVERTER</option>
+                <option value="20">MALETIN DE NEUMATICA</option>
+                <option value="21">MEMORIAS</option>
+                <option value="22">MICROCONTROLADORES Y ACCESORIOS</option>
+                <option value="23">MOTORES Y ACCESORIOS</option>
+                <option value="24">MULTIMETROS</option>
+                <option value="25">NEUMATICA</option>
+                <option value="26">OSCILOSCOPIOS</option>
+                <option value="27">PLC Y ACCESORIOS</option>
+                <option value="28">PUNTAS ATENUADAS Y PUNTAS BNC</option>
+                <option value="29">PUNTAS LOGICAS</option>
+                <option value="30">REGULADORES</option>
+                <option value="31">RESISTENCIAS</option>
+                <option value="32">ROBOTICA</option>
+                <option value="33">SENSORES</option>
+                <option value="34">TEMPORIZADORES</option>
+                <option value="35">TRANSFORMADORES</option>
+                <option value="36">TRANSISTORES</option>
+            </select>
+
+            <input type="search"/>
+            <img id="lupa" src="../img/lupa-busqueda.svg" alt="Buscar"/>
+            <img id="fav" src="../img/estrella-fav.jpeg" alt="Agregar a favoritos"/>
+        </form>
+    </header>
+
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Agregar</th>
+                    <th>Favoritos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="../img/estrella-fav.jpeg" alt="Agregar a favoritos"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img src="../img/estrella-fav.jpeg" alt="Agregar a favoritos"/></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <input type="reset" value="Cancelar"/>
+        <input type="submit" value="Guardar"/>
+    </form>
+
+</body>
+</html>
