@@ -12,6 +12,9 @@
     <meta name="viewport" content="device=device-width ,initial-scale=1"/>
     <meta name="keywords" content="ibero, login, materiales"/>
     <title>Pr&eacute;stamo de material</title>
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/general.css"/>
 </head>
 
 <body>
@@ -29,16 +32,19 @@
 
         <fieldset class="dato">
             <legend>Cuenta</legend>
-            <input type="email" id="cuenta" name="cuenta" placeholder="000000-0" required/>
+            <input type="text" id="cuenta" name="cuenta"
+                   placeholder="000000-0" required
+                   maxlength="8" pattern="\d{6}-\d"/>
         </fieldset>
 
         <fieldset class="dato">
             <legend>Contrase&ntilde;a</legend>
-            <input type="password" id="pass" name="pass" required/>
+            <input type="password" id="pass" name="pass" required
+                   maxlength="8"/>
             <img src="img/ojo-login.png" alt=""/>
         </fieldset>
 
-        <input type="submit" value="Enviar"/>
+        <a href="prestamos/carrera.html">Enviar</a>
     </form>
 
     <p>Utiliza la misma contrase&ntilde;a de servicios en l&iacute;nea</p>
