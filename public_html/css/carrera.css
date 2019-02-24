@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/*
+    Estilos para carreras.html
+
+    @Author Josue Mosh
+    @Date 23/Feb/2019
+    @File carrera.css
+ */
+
+/**
+ * Estilos para celular: 0px a 480px
+ */
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: #ECF0F1;
+}
+
+h1 {
+    text-align: center;
+    flex: 1 1 100%;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+div.carrera {
+    flex: 0 1 170px;
+    text-align: center;
+    position: relative;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: flex 0.1s linear, font-size 0.4s ease-in-out;
+    margin: 30px 5px 0;
+    height: 180px;
+}
+
+div.carrera > p {
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font-size: 1.15em;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #3F51B5;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+div.biomedica {
+    margin-bottom: 39px;
+}
+
+div.carrera img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    z-index: 3;
+    margin: 20px auto 50px;
+}
+
+main {
+    display: none;
+}
+
+/* Efectos */
+
+div.carrera:hover {
+    flex: 0 1 180px;
+    font-size: 1.1em;
+}
+
+
+/**
+ * Estilos para tablet: 481px a 960px
+ */
+
+@media screen and (min-width: 481px) {
+    /* Ajustar tamano de pantalla */
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+        align-content: center;
+    }
+
+    /* Tamano de elementos */
+    div.carrera {
+        flex: 0 1 270px;
+        height: 270px;
+        font-size: 1.2em;
+        transition: background-color 0.2s linear,
+        font-size 0.5s linear;
+    }
+
+    div.carrera img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    /* Efectos */
+    div.carrera:hover {
+        flex: 0 1 280px;
+        font-size: 1.25em;
+        background: #E0E0E0;
+    }
+}
+
+
+/**
+ * Estilos para escritorio: 961px en adelante
+ */
+
+@media screen and (min-width: 961px) {
+    h1 {
+        font-size: 1.7em;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
