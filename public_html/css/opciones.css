@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*
+    Estilos estructurales y de diseño para opciones.html
+
+    @Author Josue Mosh
+    @Date 24/Feb/2019
+    @File opciones.css
+ */
+
+/**
+ * Estilos para celular: 0px a 480px
+ */
+
+body {
+    margin: 0 auto;
+    background: #ECF0F1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 30px auto;
+}
+
+/* Principales */
+
+main > a {
+    display: block;
+    margin: 30px auto;
+    padding: 1.25rem 2.5rem;
+    width: 50%;
+
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 3px;
+}
+
+main > a.menu {
+    color: white;
+    background-color: #5C6BC0;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+main > a#salir, main > a#volver {
+    color: #5C6BC0;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #5C6BC0;
+}
+
+
+/* Efectos */
+
+main > a.menu:hover {
+    background-color: #ffffff;
+    color: #5C6BC0;
+    border-color: #5C6BC0;
+}
+
+
+/**
+ * Estilos para tablet & computadora: 600px en adelante
+ */
+
+@media screen and (min-width: 600px) {
+    main > a {
+        font-size: 1.4rem;
+        width: 40%;
+    }
+}
