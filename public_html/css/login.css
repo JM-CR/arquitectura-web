@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/*
+    Estilos estructurales y de diseño para index.html
+
+    @Author Josue Mosh
+    @Date 23/Deb/2019
+    @File login.css
+ */
+
+/* Estructural */
+
+body {
+    width: 300px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+
+/**
+ * Estilos para celular: 0px a 480px
+ */
+
+body::after {
+    background: url("../img/ibero-fondo.jpg") center center / cover no-repeat;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    min-height: 550px;
+}
+
+/* Main */
+
+main {
+    background: rgba(200, 65, 70, 0.80);
+    height: 520px;
+    margin: 20px 0 0;
+    border-radius: 30px;
+    box-shadow: 0 0 4px black;
+    text-align: center;
+}
+
+main > p:first-of-type {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 20px;
+    line-height: 1.2em;
+}
+
+main > p:last-of-type {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+main > p {
+    flex: 0 0 80%;
+}
+
+/* Form */
+
+img#ojo {
+    display: none;
+}
+
+fieldset {
+    margin-top: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+form > * {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+form > a {
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background: white;
+    border-radius: 20px;
+    transition: background-color 0.3s linear;
+}
+
+form > a:hover {
+    background: hsl(0, 0%, 78%);
+}
+
+
+/**
+ * Estilos para tablet & escritorio: 481px a 960px
+ */
+@media screen and (min-width: 481px) {
+    body {
+        width: 350px;
+    }
+
+    body::after {
+        min-height: 700px;
+    }
+
+    main {
+        margin-top: 20%;
+    }
+}

@@ -60,6 +60,7 @@ table, tr, td, th, col, colgroup {
 body {
     line-height: 1.2em;
     min-width: 300px;
+    max-width: 1200px;
     font-family: "Open Sans";
 }
 
