@@ -24,9 +24,16 @@ table .folio, table .status {
     display: none;
 }
 
-table col.multa
-{
+table col.multa {
     width: 50%;
+}
+
+img#fav
+{
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 /* Menu superior */
