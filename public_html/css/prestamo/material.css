@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/*
+    Estilos para pedir-material.html
+
+    @Author Josue Mosh
+    @Date 24/Feb/2019
+    @File material.css
+ */
+
+/**
+ * Estilos para celular y tablet: 0px a 960px
+ */
+
+/* Estructural */
+
+img#fav {
+    display: none;
+}
+
+table th:last-child, table td:last-child {
+    display: none;
+}
+
+body {
+    background: #ECF0F1;
+    min-width: 337px;
+    margin: 0 auto;
+}
+
+/* Menu superior */
+
+ul {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+ul > li {
+    display: inline;
+    margin: 5px;
+    width: 50%;
+}
+
+ul a {
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+
+    padding: 0.5em 2em;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 250px;
+
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    color: white;
+    background-color: #5C6BC0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+ul a:hover {
+    background-color: #ffffff;
+    border-color: #5C6BC0;
+    color: #5C6BC0;
+}
+
+/* Texto */
+
+header > h1, body > h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Menu principal | Inputs */
+
+form#menu {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+form#menu > div {
+    flex: 1 1 100%;
+}
+
+form#menu > div:first-child {
+    margin-bottom: 10px;
+}
+
+form#menu > div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form#menu > div > * {
+    float: left;
+}
+
+form#menu label {
+    width: 100px;
+    padding-top: 5px;
+}
+
+form#menu select {
+    width: 35%;
+    max-width: 300px;
+    background-color: white;
+}
+
+form#menu input {
+    width: 60%;
+    max-width: 500px;
+    background-color: white;
+}
+
+form#menu img#lupa {
+    width: 25px;
+    margin: 3px 0 0 8px;
+    cursor: pointer;
+}
+
+/* Tabla */
+
+form#tabla {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto 100px;
+}
+
+col {
+    width: 33.33%;
+}
+
+/* Botones de accion */
+
+div#enviar {
+    display: flex;
+}
+
+div#enviar > input {
+    display: inline;
+
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: normal;
+
+    padding: 0.5em 2em;
+    margin: 0 auto;
+    width: 40%;
+    max-width: 250px;
+
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    color: white;
+    background-color: #3F51B5;
+
+    transition: all 0.3s ease-in-out;
+}
+
+div#enviar > input:hover {
+    background-color: white;
+    border-color: #3F51B5;
+    color: #3F51B5;
+}
+
+
+/**
+ * Estilos para escritorio: 960px en adelante
+ */
+
+@media screen and (min-width: 961px) {
+    /* Estructural */
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    ul > li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 25%;
+    }
+
+
+    /* Menu principal */
+    form#menu {
+        justify-content: center;
+    }
+
+    form#menu > div {
+        flex: 0 1 450px;
+    }
+
+    form#menu label {
+        padding-top: 5px;
+    }
+
+    /* Tabla */
+    table {
+        width: 70%;
+    }
+
+    table th:last-child, table td:last-child {
+        display: block;
+    }
+
+    col#nombre {
+        width: 40%;
+    }
+
+    col#cantidad, col#quitar, col#favs {
+        width: 10%;
+    }
+
+    img#fav {
+        display: block;
+        width: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    div#enviar
+    {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
