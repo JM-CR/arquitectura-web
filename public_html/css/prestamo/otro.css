@@ -20,6 +20,18 @@ body {
     margin: 0 auto;
 }
 
+/* Tabla */
+
+table > thead tr {
+    font-size: 1.2em;
+    background: rgba(255, 92, 112, 0.69);
+}
+
+table > thead th {
+    padding: 7px 0;
+    font-weight: normal;
+}
+
 table .folio, table .status {
     display: none;
 }
@@ -31,9 +43,9 @@ table col.multa {
 img#fav
 {
     display: block;
-    width: 50px;
-    margin: 0 auto;
+    width: 40px;
     cursor: pointer;
+    margin: 5px auto 0;
 }
 
 /* Menu superior */
@@ -61,7 +73,7 @@ ul a {
     max-width: 250px;
 
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 30px;
 
     color: white;
     background-color: #5C6BC0;

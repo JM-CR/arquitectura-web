@@ -36,7 +36,7 @@ main > a {
     text-decoration: none;
     text-align: center;
 
-    border-radius: 3px;
+    border-radius: 20px;
 }
 
 main > a.menu {
@@ -62,9 +62,14 @@ main > a.menu:hover {
     border-color: #5C6BC0;
 }
 
+main > a#salir:hover, main > a#volver:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
 
 /**
- * Estilos para tablet & computadora: 600px en adelante
+ * Estilos para tablet: 600px a 960px
  */
 
 @media screen and (min-width: 600px) {
@@ -73,6 +78,21 @@ main > a.menu:hover {
         width: 40%;
 
         padding: 1.1rem 1.5rem;
-        font-size: 1.3rem;
+    }
+}
+
+
+/**
+ * Estilos para computadora: 961px en adelante
+ */
+
+@media screen and (min-width: 961px) {
+    main {
+        margin-top: 6%;
+    }
+
+    main > h1 {
+        font-size: 1.4em;
+        margin-bottom: 50px;
     }
 }
