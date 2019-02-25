@@ -85,6 +85,10 @@ form > * {
     margin: 20px auto;
 }
 
+form > input, form > select {
+    background: white;
+}
+
 form > a {
     width: 100px;
     text-decoration: none;

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*
+    Estilos para historial.html y multas.html
+
+    @Author Josue Mosh
+    @Date 24/Feb/2019
+    @File material.css
+ */
+
+/**
+ * Estilos para celular y tablet: 0px a 960px
+ */
+
+/* Estructural */
+
+body {
+    background: #ECF0F1;
+    min-width: 337px;
+    margin: 0 auto;
+}
+
+table .folio, table .status {
+    display: none;
+}
+
+table col.multa
+{
+    width: 50%;
+}
+
+/* Menu superior */
+
+ul {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+ul > li {
+    display: inline;
+    margin: 5px;
+    width: 50%;
+}
+
+ul a {
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+
+    padding: 0.5em 2em;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 250px;
+
+    border: 1px solid transparent;
+    border-radius: 3px;
+
+    color: white;
+    background-color: #5C6BC0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+ul a:hover {
+    background-color: #ffffff;
+    border-color: #5C6BC0;
+    color: #5C6BC0;
+}
+
+/* Texto */
+
+body > h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+/* Tabla */
+
+form#tabla {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto 100px;
+}
+
+col {
+    width: 33.33%;
+}
+
+
+/**
+ * Estilos para escritorio: 960px en adelante
+ */
+
+@media screen and (min-width: 961px) {
+    /* Estructural */
+    html {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100%;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    ul > li {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 25%;
+    }
+
+    img#fav {
+        display: block;
+        width: 50px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    /* Tabla */
+    table {
+        width: 70%;
+    }
+
+    table .folio, table .status {
+        display: table-cell;
+    }
+
+    col.info {
+        width: 20%;
+    }
+}

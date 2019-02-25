@@ -14,11 +14,11 @@
 
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/prestamo/otro.css">
 </head>
 
 <body>
     <header>
-        <h1>Historial</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Salir</a></li>
@@ -27,24 +27,29 @@
         </nav>
     </header>
 
+    <h1>Historial</h1>
+
     <main>
         <table id="historial">
+            <colgroup>
+                <col class="info" span="5"/>
+            </colgroup>
             <thead>
                 <tr>
                     <th>Fecha</th>
-                    <th>Folio</th>
-                    <th>Estatus</th>
-                    <th>Volver a pedir</th>
-                    <th>Reportar material</th>
+                    <th class="folio">Folio</th>
+                    <th class="status">Estatus</th>
+                    <th>Pedir</th>
+                    <th>Favorito</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td></td>
+                    <td class="folio"></td>
+                    <td class="status"></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><img id="fav" src="../img/estrella-fav.svg" alt=""/></td>
                 </tr>
             </tbody>
         </table>
